@@ -44,6 +44,7 @@ main ul {
     list-style: none;
     margin: 0 auto;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .nav-item {
     border-bottom: 5px solid transparent;
@@ -143,12 +144,38 @@ main ul {
 }
 .projects-main {
     display: flex;
+    flex-wrap: wrap;
 }
 .project-item {
     width: 50%;
 }
+.project-item a:hover {
+    color: #254558;
+}
+pre {
+    background-color: #2b2b3a;
+    padding-left: -20px;
+}
+pre code span{
+    margin-left: -50px;
+    color: #ffffff;
+}
 @media (max-width: 768px) {
     .container {
         padding: 0 20px;
+    }
+    .section-50 {
+        width: 100%;
+    }
+    .profile-info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .profile-name {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .profile-info img {
+        width: 40%;
     }
 }
